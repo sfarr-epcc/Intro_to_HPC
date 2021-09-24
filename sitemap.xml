@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://example.com/</loc>
+         <lastmod>2021-09-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://example.com/EPCC/</loc>
+         <lastmod>2021-09-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://example.com/HPC_systems_overview/</loc>
+         <lastmod>2021-09-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://example.com/ex1/</loc>
+         <lastmod>2021-09-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://example.com/why_HPC/</loc>
+         <lastmod>2021-09-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+</urlset>
