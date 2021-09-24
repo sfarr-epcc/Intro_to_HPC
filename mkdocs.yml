@@ -1,0 +1,20 @@
+site_name: Hands on Introduction to High Performance Computing
+site_url: https://example.com/
+theme:
+  name: material
+  palette:
+    scheme: default
+    primary: indigo
+
+
+nav:
+  - "Introduction": index.md
+  - "EPCC": EPCC.md
+  - "Why HPC?": why_HPC.md
+  - "Basics of HPC systems": HPC_systems_overview.md
+  - "Exercise 1 - connecting to and using a supercomputer": ex1.md
+  - "Hardware and architecture details": hardware_and_architectures.md
+  - "Parallel computing": parallel_computing.md
+  - "Exercise 2 - running parallel programs": ex2.md)
+  - "Parallel performance": performance.md
+  - "Exercise 3 - parallel performance": ex3.md
