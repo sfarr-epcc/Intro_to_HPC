@@ -27,11 +27,12 @@ This is a self-service course which you can work through at your own pace and in
 1. [Overview of EPCC](EPCC.md)
 2. [Why HPC?](why_HPC.md)
 3. [HPC systems oview](HPC_systems_overview.md)
-3. [Exercise 1 - Connecting to and using a supercomputer](ex1.md)
+3. [Exercise 1 - Connecting to and using a supercomputer](ex1/ex1.md)
 4. [Hardware and architecture details](hardware_and_architectures.md)
-5. [Parallel computing](parallel_computing.md)
+5. [Parallel programming](parallel_programming.md)
 6. [Exercise 2 - running parallel programs](ex2.md)
-7. [Parallel performance](performance.md)
+7. [Parallel performance](parallel_performance.md)
 8. [Exercise 3 - parallel performance](ex3.md)
+<!-- 9. [Extra: Optimization](optimization.md) -->
 
 
