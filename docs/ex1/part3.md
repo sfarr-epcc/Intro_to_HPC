@@ -107,7 +107,7 @@ Submitted batch job 1793266
 ```
 Where the number is the unique job ID.
 
-#### Monitoring the batch job
+### Monitoring the batch job
 The slurm command ``squeue`` can be used to show the status of the jobs. Without any options or arguments it lists all jobs known by the scheduler.
 ```
 squeue
@@ -119,7 +119,7 @@ squeue -u $USER
 ```
 Note that for this example it runs very quickly so you may not see it in the queue before it finishes running.
 
-#### Finding the output
+### Finding the output
 The Slurm system places the output from your job in a file called ``slurm-<jobID>.out``. You can view it using the ``cat`` command
 
 ```

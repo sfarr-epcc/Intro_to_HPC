@@ -14,8 +14,9 @@ The exercise is split into a few parts that should be done in order:
 
   - [Optional: Theory of the case-study program](./theory.md)   
   - [Part 1: Connecting to a HPC machine with SSH](./part1.md)   
-  - [Part 2: Linux, command line, compilation]  
-  - [Part 3: Job submission]  
+  - [Part 2: Compilation and running](./part2.md)
+  - [Part 3: Job submission](./part3.md)
+  
 
 
 

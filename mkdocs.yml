@@ -37,7 +37,7 @@ nav:
   - "EPCC": EPCC.md
   - "Why HPC?": why_HPC.md
   - "Basics of HPC systems": HPC_systems_overview.md
-  - "Exercise 1 - connecting to and using a supercomputer": 
+  - "Exercise 1 - connecting to and using a supercomputer":
     - "Overview": ex1/ex1.md
     - "Theory (Optional)": ex1/theory.md 
     - "Part 1": ex1/part1.md

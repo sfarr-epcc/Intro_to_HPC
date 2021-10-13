@@ -52,7 +52,7 @@ These two fuctions $G(x,y)$ and $LoG(x,y)$ are graphed in figure 2.
 
 
 
-# Implementation
+## Implementation
 
 To apply the LoG filter to an image the LoG filter must be turned into a discrete mask, that is a matrix of size 2d+1 x 2d+1 where d is an integer. We use d=8, therefore the LoG filter is a 17x17 square, it looks like this:
 
