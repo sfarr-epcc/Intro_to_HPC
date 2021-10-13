@@ -9,14 +9,14 @@
       
       
       
-        <link rel="canonical" href="https://example.com/ex1/">
+        <link rel="canonical" href="https://example.com/parallel_programming/">
       
       <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.2.1, mkdocs-material-7.1.8">
     
     
       
-        <title>Exercise 1 - connecting to and using a supercomputer - Hands on Introduction to High Performance Computing</title>
+        <title>Parallel programming - Hands on Introduction to High Performance Computing</title>
       
     
     
@@ -41,6 +41,8 @@
       
     
     
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
     
     
       
@@ -67,7 +69,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#practical-exercise-1" class="md-skip">
+        <a href="#parallel-programming" class="md-skip">
           Skip to content
         </a>
       
@@ -97,7 +99,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Exercise 1 - connecting to and using a supercomputer
+              Parallel programming
             
           </span>
         </div>
@@ -235,21 +237,86 @@
 
   
   
+  
     
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
       
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+      <label class="md-nav__link" for="__nav_5">
         Exercise 1 - connecting to and using a supercomputer
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Exercise 1 - connecting to and using a supercomputer" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Exercise 1 - connecting to and using a supercomputer
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ex1/ex1/" class="md-nav__link">
+        Overview
       </a>
-      
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ex1/theory/" class="md-nav__link">
+        Theory (Optional)
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ex1/part1/" class="md-nav__link">
+        Part 1
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ex1/part2/" class="md-nav__link">
+        Part 2
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ex1/part3/" class="md-nav__link">
+        Part 3
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -262,7 +329,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../hardware_and_architectures.md" class="md-nav__link">
+      <a href="../hardware_and_architectures/" class="md-nav__link">
         Hardware and architecture details
       </a>
     </li>
@@ -275,11 +342,86 @@
 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../parallel_computing.md" class="md-nav__link">
-        Parallel computing
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Parallel programming
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Parallel programming
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#parallel-programing-patterns" class="md-nav__link">
+    Parallel programing patterns
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#shared-memory" class="md-nav__link">
+    Shared memory
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#distributed-memory" class="md-nav__link">
+    Distributed memory
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#openmp" class="md-nav__link">
+    OpenMP
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mpi" class="md-nav__link">
+    MPI
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cudagpu-programming" class="md-nav__link">
+    CUDA/GPU programming
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -292,7 +434,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ex2.md)" class="md-nav__link">
+      <a href="../ex2/" class="md-nav__link">
         Exercise 2 - running parallel programs
       </a>
     </li>
@@ -307,7 +449,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../performance.md" class="md-nav__link">
+      <a href="../parallel_performance/" class="md-nav__link">
         Parallel performance
       </a>
     </li>
@@ -322,7 +464,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ex3.md" class="md-nav__link">
+      <a href="../ex3/" class="md-nav__link">
         Exercise 3 - parallel performance
       </a>
     </li>
@@ -348,6 +490,56 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#parallel-programing-patterns" class="md-nav__link">
+    Parallel programing patterns
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#shared-memory" class="md-nav__link">
+    Shared memory
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#distributed-memory" class="md-nav__link">
+    Distributed memory
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#openmp" class="md-nav__link">
+    OpenMP
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mpi" class="md-nav__link">
+    MPI
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cudagpu-programming" class="md-nav__link">
+    CUDA/GPU programming
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -359,16 +551,13 @@
               
                 
                 
-                <h1 id="practical-exercise-1">Practical exercise 1</h1>
-<p>In this practical exercise you will:</p>
-<ul>
-<li>Access ARCHER2 using SSH.</li>
-<li>Become familiar with linux and the command line.</li>
-<li>Compile and run serial code interactively.</li>
-<li>Submit serial and parallel programs to run using the batch system.</li>
-</ul>
-<p>The case study code for this exercise is a image sharpening program. The content is all contained on this separate webpage:
-<a href="https://image_shapening_exercise">Exercise 1 - Image sharpening</a></p>
+                <h1 id="parallel-programming">Parallel programming</h1>
+<h2 id="parallel-programing-patterns">Parallel programing patterns</h2>
+<h2 id="shared-memory">Shared memory</h2>
+<h2 id="distributed-memory">Distributed memory</h2>
+<h2 id="openmp">OpenMP</h2>
+<h2 id="mpi">MPI</h2>
+<h2 id="cudagpu-programming">CUDA/GPU programming</h2>
                 
               
               
@@ -382,13 +571,47 @@
         
       </main>
       
-        
+        <!--
+  Copyright (c) 2016-2021 Martin Donath <martin.donath@squidfunk.com>
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
+
+
+<!-- Footer -->
 <footer class="md-footer">
+
+
+  <!-- Link to previous and/or next page -->
   
-    <nav class="md-footer__inner md-grid" aria-label="Footer">
+    <nav
+      class="md-footer__inner md-grid"
+      aria-label="Footer"
+    >
+
+      <!-- Link to previous page -->
       
         
-        <a href="../HPC_systems_overview/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Basics of HPC systems" rel="prev">
+        <a
+          href="../hardware_and_architectures/"
+          class="md-footer__link md-footer__link--prev"
+          aria-label="Previous: Hardware and architecture details"
+          rel="prev"
+        >
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -397,24 +620,66 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Basics of HPC systems
+              Hardware and architecture details
             </div>
           </div>
         </a>
       
+
+     
+        
+      
+
+      <!-- Link to next page -->
+      
+        
+        <a
+          href="../ex2/"
+          class="md-footer__link md-footer__link--next"
+          aria-label="Next: Exercise 2 - running parallel programs"
+          rel="next"
+        >
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Exercise 2 - running parallel programs
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
       
     </nav>
   
+
+  <!-- Further information -->
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
+
+      <!-- Copyright and theme information -->
       <div class="md-footer-copyright">
         
-        Made with
-        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
-          Material for MkDocs
-        </a>
+        
+          Made with
+          <a
+            href="https://squidfunk.github.io/mkdocs-material/"
+            target="_blank" rel="noopener"
+          >
+            Material for MkDocs
+          </a>
+        
         
       </div>
+
+      <div>
+        <img src="/assets/images/eurocc.jpg" alt="EuroCC logo" style="height: 50px;width: auto;">
+        <a href="https://www.epcc.ed.ac.uk/"><img src="/assets/images/epcc-logo-white.png" alt="EPCC logo" style="height: 50px;width: auto;"></a>
+      </div>
+
+      <!-- Social links -->
       
     </div>
   </div>
@@ -428,6 +693,12 @@
     
     
       <script src="../assets/javascripts/bundle.76f349be.min.js"></script>
+      
+        <script src="../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
       
     
   </body>

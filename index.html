@@ -42,6 +42,8 @@
     
     
     
+      <link rel="stylesheet" href="stylesheets/extra.css">
+    
     
       
 
@@ -297,10 +299,85 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="ex1/" class="md-nav__link">
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      <label class="md-nav__link" for="__nav_5">
         Exercise 1 - connecting to and using a supercomputer
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Exercise 1 - connecting to and using a supercomputer" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Exercise 1 - connecting to and using a supercomputer
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ex1/ex1/" class="md-nav__link">
+        Overview
       </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ex1/theory/" class="md-nav__link">
+        Theory (Optional)
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ex1/part1/" class="md-nav__link">
+        Part 1
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ex1/part2/" class="md-nav__link">
+        Part 2
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ex1/part3/" class="md-nav__link">
+        Part 3
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -313,7 +390,7 @@
   
   
     <li class="md-nav__item">
-      <a href="hardware_and_architectures.md" class="md-nav__link">
+      <a href="hardware_and_architectures/" class="md-nav__link">
         Hardware and architecture details
       </a>
     </li>
@@ -328,8 +405,8 @@
   
   
     <li class="md-nav__item">
-      <a href="parallel_computing.md" class="md-nav__link">
-        Parallel computing
+      <a href="parallel_programming/" class="md-nav__link">
+        Parallel programming
       </a>
     </li>
   
@@ -343,7 +420,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ex2.md)" class="md-nav__link">
+      <a href="ex2/" class="md-nav__link">
         Exercise 2 - running parallel programs
       </a>
     </li>
@@ -358,7 +435,7 @@
   
   
     <li class="md-nav__item">
-      <a href="performance.md" class="md-nav__link">
+      <a href="parallel_performance/" class="md-nav__link">
         Parallel performance
       </a>
     </li>
@@ -373,7 +450,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ex3.md" class="md-nav__link">
+      <a href="ex3/" class="md-nav__link">
         Exercise 3 - parallel performance
       </a>
     </li>
@@ -467,13 +544,14 @@
 <li><a href="EPCC/">Overview of EPCC</a></li>
 <li><a href="why_HPC/">Why HPC?</a></li>
 <li><a href="HPC_systems_overview/">HPC systems oview</a></li>
-<li><a href="ex1/">Exercise 1 - Connecting to and using a supercomputer</a></li>
-<li><a href="hardware_and_architectures.md">Hardware and architecture details</a></li>
-<li><a href="parallel_computing.md">Parallel computing</a></li>
-<li><a href="ex2.md">Exercise 2 - running parallel programs</a></li>
-<li><a href="performance.md">Parallel performance</a></li>
-<li><a href="ex3.md">Exercise 3 - parallel performance</a></li>
+<li><a href="ex1/ex1/">Exercise 1 - Connecting to and using a supercomputer</a></li>
+<li><a href="hardware_and_architectures/">Hardware and architecture details</a></li>
+<li><a href="parallel_programming/">Parallel programming</a></li>
+<li><a href="ex2/">Exercise 2 - running parallel programs</a></li>
+<li><a href="parallel_performance/">Parallel performance</a></li>
+<li><a href="ex3/">Exercise 3 - parallel performance</a></li>
 </ol>
+<!-- 9. [Extra: Optimization](optimization.md) -->
                 
               
               
@@ -487,14 +565,54 @@
         
       </main>
       
-        
+        <!--
+  Copyright (c) 2016-2021 Martin Donath <martin.donath@squidfunk.com>
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
+
+
+<!-- Footer -->
 <footer class="md-footer">
+
+
+  <!-- Link to previous and/or next page -->
   
-    <nav class="md-footer__inner md-grid" aria-label="Footer">
+    <nav
+      class="md-footer__inner md-grid"
+      aria-label="Footer"
+    >
+
+      <!-- Link to previous page -->
       
+
+     
+        
+      
+
+      <!-- Link to next page -->
       
         
-        <a href="EPCC/" class="md-footer__link md-footer__link--next" aria-label="Next: EPCC" rel="next">
+        <a
+          href="EPCC/"
+          class="md-footer__link md-footer__link--next"
+          aria-label="Next: EPCC"
+          rel="next"
+        >
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
@@ -510,16 +628,32 @@
       
     </nav>
   
+
+  <!-- Further information -->
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
+
+      <!-- Copyright and theme information -->
       <div class="md-footer-copyright">
         
-        Made with
-        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
-          Material for MkDocs
-        </a>
+        
+          Made with
+          <a
+            href="https://squidfunk.github.io/mkdocs-material/"
+            target="_blank" rel="noopener"
+          >
+            Material for MkDocs
+          </a>
+        
         
       </div>
+
+      <div>
+        <img src="/assets/images/eurocc.jpg" alt="EuroCC logo" style="height: 50px;width: auto;">
+        <a href="https://www.epcc.ed.ac.uk/"><img src="/assets/images/epcc-logo-white.png" alt="EPCC logo" style="height: 50px;width: auto;"></a>
+      </div>
+
+      <!-- Social links -->
       
     </div>
   </div>
@@ -533,6 +667,12 @@
     
     
       <script src="assets/javascripts/bundle.76f349be.min.js"></script>
+      
+        <script src="javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
       
     
   </body>

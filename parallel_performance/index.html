@@ -9,14 +9,14 @@
       
       
       
-        <link rel="canonical" href="https://example.com/HPC_systems_overview/">
+        <link rel="canonical" href="https://example.com/parallel_performance/">
       
       <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.2.1, mkdocs-material-7.1.8">
     
     
       
-        <title>Basics of HPC systems - Hands on Introduction to High Performance Computing</title>
+        <title>Parallel performance - Hands on Introduction to High Performance Computing</title>
       
     
     
@@ -69,7 +69,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#basics-of-hpc-systems" class="md-skip">
+        <a href="#parallel-performance" class="md-skip">
           Skip to content
         </a>
       
@@ -99,7 +99,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Basics of HPC systems
+              Parallel performance
             
           </span>
         </div>
@@ -222,79 +222,11 @@
 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Basics of HPC systems
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../HPC_systems_overview/" class="md-nav__link">
         Basics of HPC systems
       </a>
-      
-        
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#what-is-a-supercomputer" class="md-nav__link">
-    What is a supercomputer?
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#linux-the-command-line-and-ssh" class="md-nav__link">
-    Linux, the command line, and SSH
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#some-example-systems" class="md-nav__link">
-    Some example systems
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#interactive-vs-batch-use" class="md-nav__link">
-    Interactive vs Batch use
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#leads-to" class="md-nav__link">
-    Leads to:
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -440,11 +372,72 @@
 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../parallel_performance/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Parallel performance
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Parallel performance
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#serial-performance" class="md-nav__link">
+    Serial performance
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#strong-scaling" class="md-nav__link">
+    strong scaling
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#weak-scaling" class="md-nav__link">
+    Weak scaling
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#other-considerations" class="md-nav__link">
+    Other considerations
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -490,36 +483,29 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#what-is-a-supercomputer" class="md-nav__link">
-    What is a supercomputer?
+  <a href="#serial-performance" class="md-nav__link">
+    Serial performance
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#linux-the-command-line-and-ssh" class="md-nav__link">
-    Linux, the command line, and SSH
+  <a href="#strong-scaling" class="md-nav__link">
+    strong scaling
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#some-example-systems" class="md-nav__link">
-    Some example systems
+  <a href="#weak-scaling" class="md-nav__link">
+    Weak scaling
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#interactive-vs-batch-use" class="md-nav__link">
-    Interactive vs Batch use
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#leads-to" class="md-nav__link">
-    Leads to:
+  <a href="#other-considerations" class="md-nav__link">
+    Other considerations
   </a>
   
 </li>
@@ -537,14 +523,25 @@
               
                 
                 
-                <h1 id="basics-of-hpc-systems">Basics of HPC systems</h1>
-<h2 id="what-is-a-supercomputer">What is a supercomputer?</h2>
-<h2 id="linux-the-command-line-and-ssh">Linux, the command line, and SSH</h2>
-<h2 id="some-example-systems">Some example systems</h2>
-<h2 id="interactive-vs-batch-use">Interactive vs Batch use</h2>
-<h2 id="leads-to">Leads to:</h2>
-<p>You should now try the first practical exercise:
-<a href="../ex1/ex1/">Exercise 1</a></p>
+                <h1 id="parallel-performance">Parallel performance</h1>
+<h2 id="serial-performance">Serial performance</h2>
+<ul>
+<li>programming languages</li>
+<li>different compilers</li>
+<li>compiler flags</li>
+</ul>
+<h2 id="strong-scaling">strong scaling</h2>
+<ul>
+<li>Amdahl's law</li>
+</ul>
+<h2 id="weak-scaling">Weak scaling</h2>
+<ul>
+<li>Gustafson's law</li>
+</ul>
+<h2 id="other-considerations">Other considerations</h2>
+<ul>
+<li>Hybrid OpenMP and MPI</li>
+</ul>
                 
               
               
@@ -594,9 +591,9 @@
       
         
         <a
-          href="../why_HPC/"
+          href="../ex2/"
           class="md-footer__link md-footer__link--prev"
-          aria-label="Previous: Why HPC?"
+          aria-label="Previous: Exercise 2 - running parallel programs"
           rel="prev"
         >
           <div class="md-footer__button md-icon">
@@ -607,7 +604,7 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Why HPC?
+              Exercise 2 - running parallel programs
             </div>
           </div>
         </a>
@@ -621,9 +618,9 @@
       
         
         <a
-          href="../ex1/ex1/"
+          href="../ex3/"
           class="md-footer__link md-footer__link--next"
-          aria-label="Next: Overview"
+          aria-label="Next: Exercise 3 - parallel performance"
           rel="next"
         >
           <div class="md-footer__title">
@@ -631,7 +628,7 @@
               <span class="md-footer__direction">
                 Next
               </span>
-              Overview
+              Exercise 3 - parallel performance
             </div>
           </div>
           <div class="md-footer__button md-icon">
