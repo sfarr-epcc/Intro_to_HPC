@@ -30,9 +30,9 @@ This is a self-service course which you can work through at your own pace and in
 3. [Exercise 1 - Connecting to and using a supercomputer](ex1/ex1.md)
 4. [Hardware and architecture details](hardware_and_architectures.md)
 5. [Parallel programming](parallel_programming.md)
-6. [Exercise 2 - running parallel programs](ex2.md)
+6. [Exercise 2 - running parallel programs](ex2/ex2.md)
 7. [Parallel performance](parallel_performance.md)
-8. [Exercise 3 - parallel performance](ex3.md)
+8. [Exercise 3 - parallel performance](ex3/ex3.md)
 <!-- 9. [Extra: Optimization](optimization.md) -->
 
 

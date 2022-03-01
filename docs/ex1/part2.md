@@ -5,13 +5,16 @@ This page covers how to download, compile, and run code.
 
 ## Downloading the source code
 
-In this exercerise we will be using a image sharpening program. The source code is available in a Github repository. At this stage we do not have to be concered about what Git is, only that Github is a common platform to distribute code.
+In this exercise we will be using a image sharpening program. The source code is available in a Github repository.
+
+
+
 
 To download the code you will need to clone the repository. To do this execute the following command
 
-```
-    git clone https://github.com/sfarr-epcc/sharpen.git
-```
+>```
+>    git clone https://github.com/sfarr-epcc/sharpen.git
+>```
 
 The output will look similar to this
 ```
@@ -27,10 +30,10 @@ The output will look similar to this
 
 You will now have a folder called ``sharpen``. Change directory into it and list the contents
 
-```
-    cd sharpen
-    ls
-```
+>```
+>    cd sharpen
+>    ls
+>```
 
 Output
 ```
@@ -45,41 +48,41 @@ We will compile the serial version of the source code using a Makefile.
 
 Move into the ``C-SER`` directory and list the contents.
 
-```
-    cd C-SER
-    ls
-```
+>```
+>    cd C-SER
+>    ls
+>```
 
 Output:
 ```
     cio.c  dosharpen.c  filter.c  fuzzy.pgm  Makefile  sharpen.c  sharpen.h  utilities.c  utilities.h
 ```
 
-You will see that there are various code files. The Makefile constains the commands to compile them together to produce the executable program. To use the Makefile type ``make`` command.
+You will see that there are various code files. The Makefile contains the commands to compile them together to produce the executable program. To use the Makefile type ``make`` command.
 
-```
-    make
-```
+>```bash
+>    make
+>```
 
 Output:
 ```
-    cc -fopenmp -g -DC_OPENMP_PRACTICAL -c sharpen.c
-    cc -fopenmp -g -DC_OPENMP_PRACTICAL -c dosharpen.c
-    cc -fopenmp -g -DC_OPENMP_PRACTICAL -c filter.c
-    cc -fopenmp -g -DC_OPENMP_PRACTICAL -c cio.c
-    cc -fopenmp -g -DC_OPENMP_PRACTICAL -c utilities.c
-    cc -fopenmp -g -DC_OPENMP_PRACTICAL -o sharpen sharpen.o dosharpen.o filter.o cio.o utilities.o -lm
+cc -g -DC_SERIAL_PRACTICAL -c sharpen.c
+cc -g -DC_SERIAL_PRACTICAL -c dosharpen.c
+cc -g -DC_SERIAL_PRACTICAL -c filter.c
+cc -g -DC_SERIAL_PRACTICAL -c cio.c
+cc -g -DC_SERIAL_PRACTICAL -c utilities.c
+cc -g -DC_SERIAL_PRACTICAL -o sharpen sharpen.o dosharpen.o filter.o cio.o utilities.o -lm
 ```
 
 This should produce an executable file called ``sharpen``.  
 
-## Running the serial progam
+## Running the serial program
 
 We can run the serial program directly on the login nodes
 
-```
-    ./sharpen
-```
+>```
+>    ./sharpen
+>```
 
 Output:
 ```
@@ -108,27 +111,11 @@ Output:
 
 ## Viewing the images
 
-To view the images on the remote machine you will need to make sure you an X window client installed on your local machine and you have logged into the remote mahcine with X forwarding enabled.
+To view the images on the remote machine you will need to make sure you an X window client installed on your local machine and you have logged into the remote machine with X forwarding enabled.
 
-Depending on the machine you will have different image viewing programs available.
+--8<-- "machine_specific/view_pgm.md"
 
-
-=== "ARCHER2"
-    ```
-        module load xview
-        xview file.pgm
-    ```
-
-=== "Cirrus"
-    ```
-        module load ImageMagick
-        display file.pgm
-    ```
-
-!!! Note
-    Here we have introduced the ``module`` command, this is a way of controlling the software environment typically used on HPC machines. A module is a self-contained description of a software package -- it contains the settings required to run a software package and, usually, encodes required dependencies on other software packages.
-
-Alternatively you can download the files to your local machine via SSH (``scp``, ``rysnc``, or ``stfp``), see the [ARHCER2 documentation](https://docs.archer2.ac.uk/user-guide/data/#data-transfer-via-ssh) or [Cirrus documentation](https://cirrus.readthedocs.io/en/master/user-guide/transfer.html), and open them with an image viewing program e.g. preview on MacOS.
+Alternatively you can download the files to your local machine via SSH (``scp``, ``rysnc``, or ``stfp``) and open them with an image viewing program e.g. preview on MacOS.
 
 The images should look like this:
 
