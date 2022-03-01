@@ -1,0 +1,5 @@
+
+>```bash
+>cd fractal
+>make
+>```
